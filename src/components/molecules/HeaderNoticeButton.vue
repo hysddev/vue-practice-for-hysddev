@@ -1,24 +1,22 @@
 <template>
-  <div class="header-notice">
-    <div class="header-notice__button" @click="buttonClick()">{{ number }}</div>
-    <div class="header-notice__panel" :class="isShowPanel ? 'is-open' : ''">
-      <div class="header-notice__header">
-        <div><span class="fa fa-bell-o mgr-1"></span>お知らせ</div>
-        <a href="#">通知設定</a>
-      </div>
-      <div class="header-notice__main"></div>
-      <div class="header-notice__footer">
-        <a href="#">通知一覧を見る</a>
-      </div>
-    </div>
+  <div class="header-notice-button" @click="buttonClick()">
+    <header-notice-count :number="number"/>
+    <header-notice-panel :isShowPanel="isShowPanel"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import HeaderNoticeCount from '@/components/atoms/HeaderNoticeCount.vue'
+import HeaderNoticePanel from '@/components/atoms/HeaderNoticePanel.vue'
 
-@Component
-export default class HeaderNotice extends Vue {
+@Component({
+  components: {
+    HeaderNoticeCount,
+    HeaderNoticePanel
+  }
+})
+export default class HeaderNoticeButton extends Vue {
   /**
    * Notice count
    */
@@ -27,7 +25,7 @@ export default class HeaderNotice extends Vue {
   /**
    * Notice show state
    */
-  private isShowPanel: boolean = false;
+  @Prop() private isShowPanel: boolean = false;
 
   /**
    * Button click handler
@@ -42,9 +40,8 @@ export default class HeaderNotice extends Vue {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.header-notice {
+.header-notice-button {
   position: relative;
   &__button {
     display: flex;
