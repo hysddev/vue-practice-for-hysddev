@@ -1,12 +1,12 @@
 <template>
-  <div class="header-notice-count">{{ number }}</div>
+  <div class="header-notice-button">{{ number }}</div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
-export default class HeaderNoticeCount extends Vue {
+export default class HeaderNoticeButton extends Vue {
   /**
    * Notice count
    */
@@ -15,7 +15,7 @@ export default class HeaderNoticeCount extends Vue {
 </script>
 
 <style scoped lang="scss">
-.header-notice-count {
+.header-notice-button {
   display: flex;
   align-items: center;
   justify-content: center;
