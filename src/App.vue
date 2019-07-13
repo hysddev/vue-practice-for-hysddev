@@ -6,7 +6,4 @@
 
 <style lang="scss">
 @import "styles/reset";
-#app {
-  background-color: #55c500; // temp
-}
 </style>

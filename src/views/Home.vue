@@ -1,22 +1,16 @@
 <template>
   <div class="home">
-    <header-logo/>
-    <header-notice number="0"/>
-    <header-user-menu image="https://placehold.jp/80/333333/ffffff/150x150.png?text=A" alt="user name"/>
+    <the-header/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HeaderLogo from '@/components/atoms/HeaderLogo.vue'
-import HeaderNotice from '@/components/molecules/HeaderNotice.vue'
-import HeaderUserMenu from '@/components/molecules/HeaderUserMenu.vue'
+import TheHeader from '@/components/organisms/TheHeader.vue'
 
 @Component({
   components: {
-    HeaderLogo,
-    HeaderNotice,
-    HeaderUserMenu
+    TheHeader
   }
 })
 
