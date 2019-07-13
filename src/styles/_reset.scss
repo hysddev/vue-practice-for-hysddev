@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* ------------------------------
+ * Browser Default Style Reset
+ * ----------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strong, sub, sup, var, mark,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  border: none;
+  padding: 0;
+  background: transparent;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: baseline;
+  outline: 0;
+}
+html, body {
+  font-size: 62.5%;
+  min-width: 320px;
+  height: 100%;
+}
+body {
+  line-height: 1;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "Hiragino Sans", "YuGothic", "游ゴシック", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-feature-settings: "palt";
+}
+[data-ng-controller] {
+  visibility: hidden;
+}
+[data-ng-controller].ng-scope {
+  visibility: visible;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+::focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  visibility: hidden;
+}
+a,
+button,
+input[type="button"] {
+  cursor: pointer;
+  outline: none;
+}
+a {
+  color: #000;
+  transition-property: background, color, border;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+input, button, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "Hiragino Sans", "YuGothic", "游ゴシック", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif !important;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+textarea {
+  overflow-y: auto;
+}
+select::-ms-expand {
+  display: none;
+}
+input {
+  &[type="text"],
+  &[type="password"],
+  &[type="email"],
+  &[type="number"] {
+    vertical-align: middle;
+  }
+}
+strong {
+  font-weight: bold;
+}
+mark {
+  color: #000 !important;
+  background: none !important;
+}
+nav ul {
+  list-style: none;
+}
+
+// HTML5 Selector
+header, footer, section, article, aside, nav, main, figcaption, figure, details {
+  display: block;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+
+span {
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+// use border-box
+*, *:before, *:after {
+  box-sizing: border-box;
+}
