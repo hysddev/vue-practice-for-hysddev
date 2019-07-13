@@ -41,7 +41,7 @@ export default class HeaderNotice extends Vue {
 </script>
 
 <style scoped lang="scss">
-.header-notice-button {
+.header-notice {
   position: relative;
 }
 </style>

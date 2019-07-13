@@ -27,8 +27,8 @@ export default class HeaderNoticePanel extends Vue {
 .header-notice-panel {
   display: none;
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 50px;
+  right: -30px;
   z-index: 1000;
   width: 320px;
   height: 480px;

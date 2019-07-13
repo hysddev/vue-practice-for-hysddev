@@ -32,7 +32,6 @@ export default class HeaderUserMenuButton extends Vue {
   display: flex;
   align-items: center;
   position: relative;
-  margin-right: 16px;
   cursor: pointer;
   user-select: none;
   outline: none;

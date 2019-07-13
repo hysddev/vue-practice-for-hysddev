@@ -29,6 +29,7 @@ export default class HeaderUserMenuPanel extends Vue {
   display: none;
   position: absolute;
   top: 52px;
+  right: 0;
   z-index: 20;
   width: 200px;
   background-color: #fff;
